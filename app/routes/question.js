@@ -2,7 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model(params) {
-    return this.store.findAll('question');
+    return this.store.findRecord('question', params.question_id);
   },
   actions: {
     destroyQuestion(question) {
@@ -11,6 +11,3 @@ export default Ember.Route.extend({
     }
   }
 });
-
-
-// , params.question_id will be needed later 

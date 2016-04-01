@@ -1,8 +1,8 @@
 <div class="well">
   <div class="well-heading">
-  <p>{{question.author}} asks {{question.query}}</p>  
+    <p>{{question.author}} asks {{question.query}}</p>
   </div>
   {{question.info}}
   {{question.date}}
 </div>
-  <button class="btn btn-xs detail" {{action 'delete' entry}}>Delete</button>
+  <button class="btn btn-xs" {{action 'delete' entry}}>Delete</button>
