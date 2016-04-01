@@ -1,2 +1,8 @@
 <h1>Got a question?</h1>
 <h3>There's a pretty good chance someone on the internet has an answer!</h3>
+
+<ul>
+  {{#each model as |question|}}
+     <li>{{question.author}}'s quesiton: {{question.query}}</li>
+  {{/each}}
+</ul>
