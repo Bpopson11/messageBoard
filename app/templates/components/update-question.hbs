@@ -1,0 +1,29 @@
+{{#if updateQuestionForm}}
+<div>
+  <form>
+    <div class="form-group">
+      <label for="title">Question</label>
+      {{input value=query id="query" placeholder=question.query}}
+    </div>
+
+    <div class="form-group">
+      <label for="content">More Info</label>
+      {{textarea value=info id="info" placeholder=question.info}}
+    </div>
+
+    <div class="form-group">
+      <label for="date">Your Name</label>
+      {{input type="author" value=author class="author" placeholder=question.author}}
+    </div>
+
+    <div class="form-group">
+      <label for="author">Date</label>
+      {{input type="date" value=date id="date" placeholder=question.date}}
+    </div>
+
+    <button class="btn btn-xs detail" {{action 'saveEntry' question}}>Save</button>
+  </form>
+</div>
+{{else}}
+    <button class="btn btn-xs detail" {{action 'updateQuestionForm'}}>Update</button>
+{{/if}}
