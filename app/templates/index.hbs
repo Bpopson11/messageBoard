@@ -2,7 +2,7 @@
 <h3>There's a pretty good chance someone on the internet has an answer!</h3>
 
 <ul>
-  {{#each model as |question|}}
+  {{#each model.questions as |question|}}
      {{question-tile question=question}}
   {{/each}}
 </ul>
