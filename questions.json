@@ -20,7 +20,8 @@
   "date":"01/13/2016"
 }],
 "answers": [{
-  "answer": "Hey check out this video https://www.youtube.com/watch?v=gxJ4M7tyLRE it'll help explain a lot.",
-  "author": "Mr. Clean"
+  "response": "Hey check out this video https://www.youtube.com/watch?v=gxJ4M7tyLRE it'll help explain a lot.",
+  "author": "Mr. Clean",
+  "question": "3"
   }]
 }
