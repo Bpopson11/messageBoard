@@ -1,6 +1,31 @@
 #title {
-  font-family: 'Shadows Into Light', cursive;
-  font-size: 30px;
+  font-family: 'Amatic SC', cursive;
+  font-size: 50px;
   font-weight: bold;
-  margin-left: 15px;
+  color: white;
+  text-align: center;
+}
+
+body {
+  background-image: url(blackboard.jpg);
+  background-size: cover;
+  font-family: 'Cabin Sketch', cursive;
+  font-size: 20px;
+}
+.navbar {
+  background-color: #626D5C;
+  margin-bottom: 130px;
+}
+
+.well {
+  background: none;
+  color: white;
+}
+
+.updateQ {
+  margin-top: 15px;
+}
+
+.author {
+  font-weight: bold;
 }

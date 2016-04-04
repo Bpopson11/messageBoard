@@ -1,11 +1,17 @@
 <div class="well">
-  <div class="well-heading">
-    <p>{{question.author}} asks {{question.query}}</p>
+  <div class="row">
+    <div class="col col-md-6">
+      <div class="well-heading">
+        <p>{{question.author}} asks {{question.query}}</p>
+      </div>
+      {{question.info}}
+      {{question.date}}
+      <button class="btn btn-xs" {{action 'delete' question}}> Delete</button>
+    </div>
+    <div class="col col-md-6">
+      {{update-question question=question update="update"}}
+    </div>
   </div>
-  {{question.info}}
-  {{question.date}}
-  <button class="btn btn-xs" {{action 'delete' question}}> Delete</button>
-  {{update-question question=question update="update"}}
 </div>
 <div class="well">
   {{#each question.answers as |answer|}}
