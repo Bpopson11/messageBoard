@@ -12,9 +12,9 @@
           {{input value=name id="name"}}
         </div>
 
-        <button {{action 'saveAnswer1'}}>Save</button>
+        <button class="btn" {{action 'saveAnswer1'}}>Save</button>
       </form>
     </div>
 {{else}}
-    <button {{action 'answerFormShow'}}>New Answer</button>
+    <button class="btn" {{action 'answerFormShow'}}>New Answer</button>
 {{/if}}

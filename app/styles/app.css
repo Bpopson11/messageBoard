@@ -3,7 +3,7 @@
   font-size: 50px;
   font-weight: bold;
   color: white;
-  text-align: center;
+  margin-left: 25px;
 }
 
 body {
@@ -11,6 +11,7 @@ body {
   background-size: cover;
   font-family: 'Cabin Sketch', cursive;
   font-size: 20px;
+  color: white;
 }
 .navbar {
   background-color: #626D5C;
@@ -26,6 +27,19 @@ body {
   margin-top: 15px;
 }
 
-.author {
+.bolded {
   font-weight: bold;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #BA8D78;
+}
+
+.buttonsRight {
+  float: right;
+}
+
+input {
+  color: black;
 }
