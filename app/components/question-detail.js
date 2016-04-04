@@ -7,6 +7,10 @@ export default Ember.Component.extend({
         this.sendAction('destroyQuestion', question);
       }
     },
+    destroyAnswer(answer) {
+      answer.destroyRecord();
+      this.transitionTo('question question_id');
+    },
     update(question, params) {
       this.sendAction('update', question, params);
     }
