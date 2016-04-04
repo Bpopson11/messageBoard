@@ -5,7 +5,7 @@ export default Ember.Route.extend({
     return Ember.RSVP.hash({
       questions: this.store.findAll('question'),
       answers: this.store.findAll('answer')
-  });
+    });
   },
   actions: {
     update(question, params) {
