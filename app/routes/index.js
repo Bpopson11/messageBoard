@@ -9,8 +9,9 @@ export default Ember.Route.extend({
   },
   actions: {
     update(question, params) {
+      debugger;
       question.save();
-      this.transitionTo('question question_id')
+      this.transitionTo('question', params.question_id);
     }
   }
 });

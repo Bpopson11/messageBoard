@@ -1,7 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  actios: {
+  actions: {
     saveQuestion1 (){
       var params = {
         query: this.get('query'),

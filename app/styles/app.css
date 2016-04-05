@@ -45,6 +45,6 @@ input, textarea {
   width: 500px;
 }
 
-a {
+.navbar-right li a.links {
   color: white;
 }
