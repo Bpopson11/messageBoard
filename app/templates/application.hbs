@@ -1,15 +1,8 @@
-<nav class="navbar navbar-default">
-  <div class="container=fluid">
-    <ul class="navbar-center nav navbar-nav">
-      <li id="title">Hey! Do You Know...?</li>
-    </ul>
-    <ul class="nav navbar-nav navbar-right">
-      <li>{{#link-to 'index' class="links"}}Home{{/link-to}}</li>
-      <li>{{#link-to 'create' class="links lastOne"}}New Question{{/link-to}}</li>
-    </ul>
-    </div>
-</nav>
-
+<div class="jumbotron">
+  <h3 id="title">Hey! Do You Know...?</h3>
+</div>
+  <h4>{{#link-to 'index' class="links"}}Home{{/link-to}}</h4>
+  <h4>{{#link-to 'create' class="links lastOne"}}New Question{{/link-to}}</h4>
 <div class="container">
   <div class="row">
     {{outlet}}

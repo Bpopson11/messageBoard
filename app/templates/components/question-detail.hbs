@@ -15,8 +15,6 @@
     </div>
   </div>
 </div>
-<div class="well">
   {{#each question.answers as |answer|}}
     {{answer-tile answer=answer question=model destroyAnswer="destroyAnswer"}}
   {{/each}}
-</div>

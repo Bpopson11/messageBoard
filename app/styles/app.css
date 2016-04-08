@@ -1,26 +1,28 @@
+.jumbotron {
+  height: 250px;
+  background-image: url(/assets/images/whiteboard.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  background-attachment: local;
+}
+
 #title {
-  font-family: 'Amatic SC', cursive;
-  font-size: 50px;
+  font-family: 'Pacifico', cursive;
+  font-size: 80px;
   font-weight: bold;
-  color: white;
-  margin-left: 25px;
+  color: black;
+  text-align: center;
+  float: right;
+  margin-right: 200px;
 }
 
 body {
-  background-image: url(blackboard.jpg);
-  background-size: cover;
-  font-family: 'Cabin Sketch', cursive;
+  font-family: 'Oswald', sans-serif;
   font-size: 20px;
-  color: white;
-}
-.navbar {
-  background-color: #626D5C;
-  margin-bottom: 130px;
 }
 
 .well {
-  background: none;
-  color: white;
 }
 
 .updateQ {
@@ -45,6 +47,7 @@ input, textarea {
   width: 500px;
 }
 
-.navbar-right li a.links {
-  color: white;
+.links {
+  margin-left: 20px;
+  margin-bottom: 20px;
 }
