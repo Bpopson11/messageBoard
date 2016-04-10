@@ -1,3 +1,5 @@
 <p>{{answer.response}}</p>
 <p>Answered by: {{answer.name}}</p><br>
-<button class="btn btn-xs detail" {{action 'delete' answer}}>Delete</button>
+<p>Answered on: {{answer.timestamp}}</p><br>
+<button class="btn btn-xs detail deleteAnswer" {{action 'delete' answer}}>Delete</button>
+<hr>

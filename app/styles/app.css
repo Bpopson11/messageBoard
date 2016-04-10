@@ -60,3 +60,11 @@ input, textarea {
 a:hover {
   color: #D14270;
 }
+
+a {
+  color: #018ED5;
+}
+
+.deleteAnswer {
+  float:right;
+}

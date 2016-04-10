@@ -1,4 +1,5 @@
 import Ember from 'ember';
+import moment from 'moment';
 
 export default Ember.Component.extend({
   addNewAnswer: false,
@@ -10,6 +11,7 @@ export default Ember.Component.extend({
       var params = {
         response: this.get('response'),
         name: this.get('name'),
+        timestamp: this.get('timestamp') ? this.get('timestamp') : moment().format('MMMM Do YYYY, h:mm a'),
         question: this.get('question'),
       };
       this.set('addNewAnswer', false);
