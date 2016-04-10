@@ -11,7 +11,7 @@
   font-family: 'Pacifico', cursive;
   font-size: 80px;
   font-weight: bold;
-  color: black;
+  color: #632E4A;
   text-align: center;
   float: right;
   margin-right: 200px;
@@ -20,6 +20,10 @@
 body {
   font-family: 'Oswald', sans-serif;
   font-size: 20px;
+}
+
+.glyphicon-question-sign {
+  font-size: 12px;
 }
 
 .well {
@@ -32,10 +36,11 @@ body {
 .bolded {
   font-weight: bold;
   font-size: 24px;
+  color: #63CB5C;
 }
 
 .btn {
-  background-color: #BA8D78;
+  background-color: #018ED5;
 }
 
 .buttonsRight {
@@ -50,4 +55,8 @@ input, textarea {
 .links {
   margin-left: 20px;
   margin-bottom: 20px;
+}
+
+a:hover {
+  color: #D14270;
 }
