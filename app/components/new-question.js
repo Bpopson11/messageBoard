@@ -7,7 +7,7 @@ export default Ember.Component.extend({
         query: this.get('query'),
         ifno: this.get('info'),
         author: this.get('author'),
-        date: this.get('date'),
+        date: this.get('date') ? this.get('date') : moment().format('MMMM Do YYYY, h:mm a'),
       };
       this.set('addNewQuestion', false);
       this.sendAction('saveQuestion2', params);

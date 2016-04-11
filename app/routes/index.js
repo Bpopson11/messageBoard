@@ -7,6 +7,9 @@ export default Ember.Route.extend({
       answers: this.store.findAll('answer')
     });
   },
+  // sortBy: ['date:desc'],
+  // sortedQuestions: Ember.computed.sort('question.date', 'sortBy'),
+
   actions: {
     update(question, params) {
       question.save();

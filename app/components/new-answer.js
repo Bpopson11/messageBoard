@@ -11,6 +11,7 @@ export default Ember.Component.extend({
       var params = {
         response: this.get('response'),
         name: this.get('name'),
+        vote: 0,
         timestamp: this.get('timestamp') ? this.get('timestamp') : moment().format('MMMM Do YYYY, h:mm a'),
         question: this.get('question'),
       };

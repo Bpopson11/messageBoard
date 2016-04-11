@@ -68,3 +68,7 @@ a {
 .deleteAnswer {
   float:right;
 }
+
+.answerDetails {
+  font-size: 17px;
+}

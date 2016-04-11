@@ -1,5 +1,15 @@
-<p>{{answer.response}}</p>
-<p>Answered by: {{answer.name}}</p><br>
-<p>Answered on: {{answer.timestamp}}</p><br>
+<p>{{answer.response}}</p><br>
+<p class="answerDetails">Answered by: {{answer.name}}</p>
+<p class="answerDetails">Answered on: {{answer.timestamp}}</p>
+
+{{#unless voteMade}}
+<button  class="btn" {{action 'upVote' answer}}><span class="glyphicon glyphicon-thumbs-up"></span></button>
+
+<button class="btn" {{action 'downVote' answer}}><span class="glyphicon glyphicon-thumbs-down"></span></button>
+
+{{else}}
+<p>Thank you for voting!!</p>
+{{/unless}}
+
 <button class="btn btn-xs detail deleteAnswer" {{action 'delete' answer}}>Delete</button>
 <hr>
