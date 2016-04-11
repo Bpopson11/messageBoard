@@ -1,7 +1,6 @@
 # Message-board
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This app acts as a message board where users can come to ask questions and supply answers to questions asked. A user can up or down vote an answer and the answers will display in order of highest votes. Questions on the main page are marked with ? icons to note how active a question is based on number of answers. The questions may be added, deleted, and edited. Answers may be added and deleted.
 
 ## Prerequisites
 
