@@ -31,13 +31,13 @@ export default Ember.Route.extend({
       var voteCount = answer.get('vote');
       answer.set('vote', voteCount +=1);
       answer.save();
-      this.transitionTo('question question_id');
+      this.transitionTo('question');
     },
     downVote(answer) {
       var voteCount = answer.get('vote');
       answer.set('vote', voteCount -=1);
       answer.save();
-      this.transitionTo('question question_id');
+      this.transitionTo('question');
     }
   }
 });

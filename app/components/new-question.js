@@ -5,7 +5,7 @@ export default Ember.Component.extend({
     saveQuestion1 (){
       var params = {
         query: this.get('query'),
-        ifno: this.get('info'),
+        info: this.get('info'),
         author: this.get('author'),
         date: this.get('date') ? this.get('date') : moment().format('MMMM Do YYYY, h:mm a'),
       };
