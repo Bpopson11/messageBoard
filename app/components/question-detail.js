@@ -1,10 +1,14 @@
 import Ember from 'ember';
 
-
 export default Ember.Component.extend({
+  bookmarkList: Ember.inject.service(),
   voteMade: false,
 
   actions: {
+    addToBookmark(question){
+      debugger;
+      this.get('bookmarkList').add(question);
+    },
     delete(question) {
       if (confirm('Are you sure you want to delete this question?')) {
         this.sendAction('destroyQuestion', question);
