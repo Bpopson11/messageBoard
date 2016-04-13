@@ -3,11 +3,16 @@ import Ember from 'ember';
 export default Ember.Component.extend({
   bookmarkList: Ember.inject.service(),
   voteMade: false,
+  bookMarked: false,
+
+  sortBy: ['vote:asc'],
+  sortedAnswers: Ember.computed.sort('question.answers', 'sortBy'),
+
 
   actions: {
     addToBookmark(question){
-      debugger;
       this.get('bookmarkList').add(question);
+      this.set('bookMarked', true);
     },
     delete(question) {
       if (confirm('Are you sure you want to delete this question?')) {

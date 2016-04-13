@@ -1,3 +1,6 @@
+<h3>Your Question Watch List:</h3>
+<ul>
 {{#each bookmarkList.questions as |question|}}
-  {{question.query}} - {{question.author}}
+<li>{{#link-to 'question' question.id}}{{question.query}}{{/link-to}} - {{question.author}}</li>
 {{/each}}
+</ul>

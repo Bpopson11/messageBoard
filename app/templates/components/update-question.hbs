@@ -4,28 +4,21 @@
     <div class="form-group">
       <label for="title">Question</label>
       <div class="input-group">
-        {{input value=query id="query" placeholder=question.query}}
+        {{input value=question.query id="query" placeholder=question.query}}
       </div>
     </div>
 
     <div class="form-group">
       <label for="content">More Info</label>
       <div class="input-group">
-        {{textarea value=info id="info" placeholder=question.info}}
+        {{textarea value=question.info id="info" placeholder=question.info}}
       </div>
     </div>
 
     <div class="form-group">
       <label for="date">Your Name</label>
       <div class="input-group">
-        {{input type="author" value=author class="author" placeholder=question.author}}
-      </div>
-    </div>
-
-    <div class="form-group">
-      <label for="author">Date</label>
-      <div class="input-group">
-        {{input type="date" value=date id="date" placeholder=question.date}}
+        {{input type="author" value=question.author class="author" placeholder=question.author}}
       </div>
     </div>
 

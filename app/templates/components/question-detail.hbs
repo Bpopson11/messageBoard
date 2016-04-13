@@ -11,11 +11,15 @@
       <div class="buttonsRight">
         <button class="btn btn-xs" {{action 'delete' question}}> Delete</button>
         {{update-question question=question update="update"}}
+        {{#unless bookMarked}}
         <button class="btn btn-xs" {{action 'addToBookmark' question}}>Save Bookmark</button>
+        {{else}}
+        <p><small>Bookmark saved!</small></p>
+        {{/unless}}
       </div>
     </div>
   </div>
 </div>
-  {{#each question.answers as |answer|}}
+  {{#each sortedAnswers as |answer|}}
     {{answer-tile answer=answer destroyAnswer="destroyAnswer" upVote="upVote" downVote="downVote"}}
   {{/each}}
