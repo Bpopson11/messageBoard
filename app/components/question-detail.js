@@ -5,7 +5,7 @@ export default Ember.Component.extend({
   voteMade: false,
   bookMarked: false,
 
-  sortBy: ['vote:asc'],
+  sortBy: ['vote:desc'],
   sortedAnswers: Ember.computed.sort('question.answers', 'sortBy'),
 
 

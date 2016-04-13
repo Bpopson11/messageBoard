@@ -8,7 +8,7 @@
 <button class="btn" {{action 'downVote' answer}}><span class="glyphicon glyphicon-thumbs-down"></span></button>
 
 {{else}}
-<p>Thank you for voting!!</p>
+<p>Thank you for voting!! Current vote level: {{answer.vote}}</p>
 {{/unless}}
 
 <button class="btn btn-xs detail deleteAnswer" {{action 'delete' answer}}>Delete</button>
